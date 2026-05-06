@@ -25,11 +25,18 @@ COMPONENT_INVENTORY.md. Cannot build without file paths."
 
 ## TDD Protocol
 
+Follow the assertion hierarchy and conventions in
+`standards/testing.md`. Key rules: assert on user-visible
+behavior, never use `.toBeInTheDocument()`, mock at the
+network/repo boundary only.
+
 Executes the full TDD Component Build Protocol:
 1. Write RTL tests to the exact Test path
    - Import test utilities from the path in Build config
    - Use the test runner specified in Build config
    - Each test must contain at least one expect() assertion
+   - Follow the assertion hierarchy in `standards/testing.md`
+     (behavior > content > visibility > attribute > absence)
 2. Verify test quality:
    - Count expect() calls in the test file — must be > 0
    - Each test case (it/test block) must have at least one assertion
