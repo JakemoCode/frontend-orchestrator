@@ -22,7 +22,7 @@ export class PreCommitReviewStep extends BaseStep {
   }
 
   async execute(ctx: RunContext): Promise<StepResult> {
-    const review = await ctx.invokeCommand("/code-review");
+    const review = await ctx.invokeCommand("/fo-code-review");
     const simplify = await ctx.invokeCommand("/code-simplify");
 
     const typecheck = await ctx.exec(ctx.config.commands.typecheck);

@@ -23,7 +23,7 @@ export class PostWaveReviewStep extends BaseStep {
 
   async execute(ctx: RunContext): Promise<StepResult> {
     const [review, simplify, audit, wiringAudit] = await Promise.all([
-      ctx.invokeCommand("/code-review"),
+      ctx.invokeCommand("/fo-code-review"),
       ctx.invokeCommand("/code-simplify"),
       ctx.invokeCommand("/design-audit"),
       ctx.invokeCommand("/wiring-audit"),

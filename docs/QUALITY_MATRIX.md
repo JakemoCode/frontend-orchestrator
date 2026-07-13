@@ -22,7 +22,7 @@ mechanism so users know exactly what to trust.
 | Client unit tests | Runner-enforced | `test-suite.ts` runs `config.commands.test_client` | Fails pipeline on non-zero exit |
 | E2E tests | Runner-enforced | `test-suite.ts` / `e2e-green.ts` runs `config.commands.test_e2e` | Fails pipeline on non-zero exit |
 | Component TDD protocol | Prompt-delegated | `build-wave.ts` → `/build-component` | TDD steps are prompt instructions, not verified by runner |
-| Code review | Prompt-delegated | `post-wave-review.ts` → `/code-review` | LLM performs review; runner checks pass/fail signal |
+| Code review | Prompt-delegated | `post-wave-review.ts` → `/fo-code-review` | LLM performs review; runner checks pass/fail signal |
 | Code simplification | Prompt-delegated | `post-wave-review.ts` → `/code-simplify` | LLM performs cleanup; runner checks pass/fail signal |
 
 ### Quality Phase
