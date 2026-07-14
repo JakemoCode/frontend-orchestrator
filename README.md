@@ -63,7 +63,7 @@ approval_mode: interactive
 | `/build-page [Page]` | Build all components for a page, parallelized by dependency wave |
 | `/build-pipeline` | Full autonomous build: E2E tests, dependency waves, audits, PRs |
 | `/review-requirements` | Summarize build state, suggest next step |
-| `/code-review` | Dispatch `superpowers:code-reviewer` against recent changes |
+| `/fo-code-review` | Dispatch `superpowers:code-reviewer` against recent changes |
 | `/code-simplify` | Dispatch `code-simplifier:code-simplifier` against recent changes |
 | `/wiring-audit` | Verify integration test coverage for parent-child component relationships |
 | `/design-audit [route?]` | A11y + design audit at all breakpoints, auto-fix critical issues |

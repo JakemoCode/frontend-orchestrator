@@ -2,7 +2,7 @@
 description: Dispatch the superpowers code-reviewer agent against recently changed files
 ---
 
-# /code-review
+# /fo-code-review
 
 Dispatch the `superpowers:code-reviewer` agent against all
 files changed since the last commit (or since the branch
